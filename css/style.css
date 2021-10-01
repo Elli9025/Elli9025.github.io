@@ -14,18 +14,30 @@
 
 .navbar-title {
     margin: 0;
-    padding: .5rem 2rem;
+    /*padding: top right bottom left */
+    padding: .5rem 3rem .5rem 1rem;
     font-size: 1.5rem;
     border-right: 5px solid rgb(68, 129, 179);
 }
 
 .navlinks {
     margin-right: 1rem;
+    /*padding: topbottom rightleft */
     padding: 1rem 2rem;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
+ 
+}
+
+.grid-container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.bio {
+    border: 5px solid #555;
+}
+
+.headshot {
+    border: 5px solid #555;
 }
 
 
