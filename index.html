@@ -12,7 +12,7 @@
 <body>
 
   <!-- Off Canvas Navigation Menu For Mobile/Small Only -->
-    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <div class="off-canvas position-right" id="offCanvasRightOverlap" data-off-canvas data-transition="overlap>
 
         <!-- Close button -->
         <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -21,15 +21,13 @@
     
         <!-- Menu -->
         <ul class="vertical menu">
-          <li><a href="#">Foundation</a></li>
-          <li><a href="#">Dot</a></li>
-          <li><a href="#">ZURB</a></li>
-          <li><a href="#">Com</a></li>
-          <li><a href="#">Slash</a></li>
-          <li><a href="#">Sites</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="fun.html">Fun</a></li>
         </ul>
     
-      </div>
+    </div>
     <!-- -------------------------------------------- -->
 
       <!-- Page Content -->
@@ -42,17 +40,22 @@
             <div class="top-bar-left">
               <ul class="dropdown menu" data-dropdown-menu>
                 <li class="menu-text"><h3 class="navbar-title">Ben Elliott</h3></li>
+                <li class="navlinks"><a href="index.html">Home</a></li>
                 <li class="navlinks"><a href="projects.html">Projects</a></li>
                 <li class="navlinks"><a href="resume.html">Resume</a></li>
                 <li class="navlinks"><a href="fun.html">Fun</a></li>
+                
               </ul>
             </div>
           </div>
         </nav>
-        <!----------------------------->
+        
+        <!-- Nav button for mobile/small -->
+        <button type="button" class="button show-for-small-only" data-toggle="offCanvasRightOverlap"><img src="images/hamburger-menu.png"/></button>
 
-        <!-- Grid for a bit about me and Headshot photo of myself -->
-        <div class="grid-container">
+
+        <!-- MEDIUM/LARGE Grid for a bit about me and Headshot photo of myself for medium/large -->
+        <div class="grid-container show-for-medium">
           <div class="grid-x">
             <div class="cell small-6 bio"><p>Lorem ipsum dolor sit amet,
                consectetur adipiscing elit, sed do eiusmod tempor 
@@ -65,6 +68,28 @@
           </div>
         </div>
 
+        <!-- SMALL Vertical Grid for a bit about me and Headshot photo of myself for small -->
+        <div class="grid-container show-for-small-only" id="mobile-bio-headshot-container">
+          <div class="grid-y" style="height: 20rem;">
+            <div class="cell small-2">
+              <h2 id="bio-header">Hi, I'm Ben. Nice to meet you.</h2>
+            </div>
+            <div class="cell small-6" id="headshot-mobile-cell">
+              <img id="headshot-mobile-img" src="images/headshot-mobile.jpg">
+            </div>
+            <div class="cell small-9" >
+              <p id="bio-mobile">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Aenean 
+                pharetra magna ac placerat vestibulum lectus. Convallis 
+                a cras semper auctor neque vitae. Ut diam quam nulla porttitor 
+                massa id neque aliquam. Viverra maecenas accumsan lacus vel. 
+                Eu ultrices vitae auctor eu augue ut lectus arcu. </p>
+            </div>
+          </div>
+      </div>
+
+      
         
 
 
@@ -73,13 +98,11 @@
         
 
           
-
         </div>
 
 
-        <!-- Nav button for mobile/small -->
-        <button type="button" class="button show-for-small-only" data-toggle="offCanvas">Open off-canvas</button>
-      </div>
+        
+      
 
     <!-- include before closing </body> tag -->
     <script src="js/jquery-3.6.0.min.js"></script>
