@@ -10,6 +10,12 @@
     margin: 0;
     padding: 0;
     display: inline-block;
+    
+}
+
+.top-bar ul {
+    background-color:white;
+    padding-top: 1rem;
 }
 
 .navbar-title {
@@ -17,29 +23,62 @@
     /*padding: top right bottom left */
     padding: .5rem 3rem .5rem 1rem;
     font-size: 1.5rem;
-    border-right: 5px solid rgb(68, 129, 179);
+    border-right: .5rem solid #91befd;
+    font-family: 'Mukta', sans-serif;
 }
 
 .navlinks {
     margin-right: 1rem;
     /*padding: topbottom rightleft */
     padding: 1rem 2rem;
- 
+    
 }
+
+a {
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: black;
+  text-decoration: underline .3rem #91befd;
+}
+
 
 .grid-container {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
 }
 
-.bio {
-    border: 5px solid #555;
+.bio-container {
+    
     word-break: break-word;
 }
 
-.headshot {
-    border: 5px solid #555;
+.headshot-container {
+    
 }
+
+#headshot-img {
+    padding-left: 5.7815rem;
+    padding-right: 2.89075rem;
+}
+
+#bio-header {
+    padding-top: 3rem;
+    font-family: 'Mukta', sans-serif;
+    text-decoration: underline .5rem #91befd;
+}
+
+#bio {
+    word-break: break-word;
+    font-family: 'Asap', sans-serif;
+    font-size: 2rem;
+}
+
+
+/*Mobile*/
 
 #headshot-mobile-cell {
     text-align: center;
@@ -48,11 +87,7 @@
     
   }
 
- 
-  
-
-  
-#bio-mobile {
+#mobile-bio {
     text-align: center;
     line-height: 1.75em;
     color: black;
@@ -71,7 +106,7 @@
 
 
 
-#bio-header-mobile {
+#mobile-bio-header {
     text-align: center;
     margin: 0;
     font-family: 'Mukta', sans-serif;
@@ -102,30 +137,31 @@
     
 }
 
+
+/* footer */
+
 .footer-img-container {
     display: flex;
   justify-content: center;
+  
 }
 
 .footer-container {
     margin-top: 2rem;
     margin-bottom: 0;
+    
 }
 
-.footer-img {
-    
-  
-  /* bottom: 2.563rem;*/
-   
+#rectangle{
+    width:100%px;
+    height:2rem;
+    background:#91befd;
 }
+
+
+
 
 .footer {
-    
-
-    
-   left: 0;
-   bottom: 0;
-   
    width: 100%;
    background-color: #91befd;
    color: #91befd;
@@ -145,3 +181,163 @@
      position: absolute;
      right: 0;
     }
+
+
+    /* Projects Desktop */
+
+    #projects-header-container {
+    text-align: center;    
+    
+    
+    }
+
+    #projects-header {
+        font-family: 'Mukta', sans-serif;
+    font-size: 3rem;
+   
+    }
+
+    .project-container {
+        margin-bottom: 4rem;
+    }
+
+    .project-header {
+        padding-top: 3rem;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.75rem;
+    text-decoration: underline .4rem #91befd;
+    }
+
+    .project-description {
+        word-break: break-word;
+    font-family: 'Asap', sans-serif;
+    font-size: 1.25rem;
+    }
+
+    .project-image1 {
+        margin-top: 3.125rem;
+        margin-left: 2.469rem;
+        border: .4rem solid #91befd;
+        border-radius: 1.563rem;
+        
+    }
+
+    .project-image2 {
+        margin-top: 1.75rem;
+        margin-bottom: 2.438rem;
+        margin-left: 2.281rem;
+        border: .4rem solid #91befd;
+        border-radius: 1.563rem;
+        
+    }
+
+    .project-image3 {
+        margin-top: 2.031rem;
+        margin-left: 2.469rem;
+        border: .4rem solid #91befd;
+        border-radius: 1.563rem;
+        
+    }
+
+    #rectangle-nonhomepage{
+        width:100%px;
+        height:2rem;
+        background:#91befd;
+        margin-top: 8rem;
+    }
+
+/* Projects Mobile */
+
+#mobile-projects-header {
+    text-align: center;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    font-size: 	2rem;
+    
+}
+
+#mobile-project-header {
+    padding-top: .5rem;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.75rem;
+    text-decoration: underline .4rem #91befd;
+}
+
+#mobile-project-description {
+    word-break: break-word;
+    font-family: 'Asap', sans-serif;
+    font-size: 1rem;
+}
+
+.mobile-project-images {
+    
+    border: .4rem solid #91befd;
+    border-radius: 1.563rem;
+    
+}
+
+
+
+.mobile-project-image-container {
+    margin-bottom: 3rem;
+}
+
+
+#mobile-rectangle-nonhomepage{
+    width:100%px;
+    height:2rem;
+    background:#91befd;
+    margin-top: 2rem;
+}
+
+/* Resume Desktop */ 
+#resume-header-container {
+    text-align: center;    
+    
+    
+}
+
+#resume-header {
+    font-family: 'Mukta', sans-serif;
+font-size: 3rem;
+margin-bottom: 6rem;
+
+}
+
+.project-header-name {
+    font-family: 'Mukta', sans-serif;
+font-size: 3rem;
+margin-bottom: 0rem;
+}
+
+.resume-container {
+    margin-bottom: 2rem;
+}
+
+.resume-headers {
+    padding-top: 3rem;
+font-family: 'Mukta', sans-serif;
+font-size: 1.75rem;
+
+text-decoration: underline .4rem #91befd;
+}
+
+.resume-description {
+    word-break: break-word;
+font-family: 'Mukta', sans-serif;
+font-size: 1.25rem;
+font-style: bold;
+}
+
+#resume-link{
+    font-family: 'Asap', sans-serif;
+    font-size: 1rem;
+    color: grey;
+}
+
+.resume-description-smaller {
+    
+        font-family: 'Asap', sans-serif;
+        font-size: 1rem;
+  
+}
