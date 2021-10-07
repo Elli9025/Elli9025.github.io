@@ -4,15 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ben Elliott</title>
+  <link rel="icon" type="image/png" href="images/B-logo-mobile.png"/>
 	<link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
+  <link href="https://fonts.googleapis.com/css2?family=Asap&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <!-- Off Canvas Navigation Menu For Mobile/Small Only -->
-    <div class="off-canvas position-right" id="offCanvasRightOverlap" data-off-canvas data-transition="overlap>
+    <div class="off-canvas position-right" id="offCanvasRightOverlap" data-off-canvas data-transition="overlap">
 
         <!-- Close button -->
         <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -34,63 +39,76 @@
       <div class="off-canvas-content" data-off-canvas-content>
         
 
-        <!-- Navbar for large/medium -->
-        <nav id="navbar">
-          <div class="top-bar show-for-medium">
-            <div class="top-bar-left">
-              <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text"><h3 class="navbar-title">Ben Elliott</h3></li>
-                <li class="navlinks"><a href="index.html">Home</a></li>
-                <li class="navlinks"><a href="projects.html">Projects</a></li>
-                <li class="navlinks"><a href="resume.html">Resume</a></li>
-                <li class="navlinks"><a href="fun.html">Fun</a></li>
-                
-              </ul>
+          <!-- Navbar for large/medium -->
+          <nav id="navbar" class="show-for-medium">
+            <div class="top-bar show-for-medium">
+              <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="menu-text"><h3 class="navbar-title">Ben Elliott</h3></li>
+                  <li class="navlinks"><a href="index.html">Home</a></li>
+                  <li class="navlinks"><a href="projects.html">Projects</a></li>
+                  <li class="navlinks"><a href="resume.html">Resume</a></li>
+                  <li class="navlinks"><a href="fun.html">Fun</a></li>
+                  
+                </ul>
+              </div>
             </div>
+          </nav>
+
+          <!-- Navbar for mobile, homepage logo link, and offcanvas hamburger menu button -->
+          <div class="show-for-small-only" id="mobile-navbar">
+            <a href="index.html"><img id="mobile-navbar-logo" src="images/B-logo-mobile.png"></a>
+            <button type="button" class="button show-for-small-only" id="mobile-navbar-hamburger-offcanvas" data-toggle="offCanvasRightOverlap"><img src="images/hamburger-menu.png"/></button>
           </div>
-        </nav>
-        
-        <!-- Nav button for mobile/small -->
-        <button type="button" class="button show-for-small-only" data-toggle="offCanvasRightOverlap"><img src="images/hamburger-menu.png"/></button>
+          
+
+          
+          
+
+          
+          
+          
 
 
-        <!-- MEDIUM/LARGE Grid for a bit about me and Headshot photo of myself for medium/large -->
-        <div class="grid-container show-for-medium">
-          <div class="grid-x">
-            <div class="cell small-6 bio"><p>Lorem ipsum dolor sit amet,
-               consectetur adipiscing elit, sed do eiusmod tempor 
-               incididunt ut labore et dolore magna aliqua. Aenean 
-               pharetra magna ac placerat vestibulum lectus. Convallis 
-               a cras semper auctor neque vitae. Ut diam quam nulla porttitor 
-               massa id neque aliquam. Viverra maecenas accumsan lacus vel. 
-               Eu ultrices vitae auctor eu augue ut lectus arcu. </p></div>
-            <div class="cell small-6 headshot"><img src="images/headshot-placeholder.jpg"></div>
-          </div>
-        </div>
-
-        <!-- SMALL Vertical Grid for a bit about me and Headshot photo of myself for small -->
-        <div class="grid-container show-for-small-only" id="mobile-bio-headshot-container">
-          <div class="grid-y" style="height: 20rem;">
-            <div class="cell small-2">
-              <h2 id="bio-header">Hi, I'm Ben. Nice to meet you.</h2>
-            </div>
-            <div class="cell small-6" id="headshot-mobile-cell">
-              <img id="headshot-mobile-img" src="images/headshot-mobile.jpg">
-            </div>
-            <div class="cell small-9" >
-              <p id="bio-mobile">Lorem ipsum dolor sit amet,
+          <!-- MEDIUM/LARGE Grid for a bit about me and Headshot photo of myself for medium/large -->
+          <div class="grid-container show-for-medium">
+            <div class="grid-x">
+              <div class="cell small-6 bio"><p>Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Aenean 
                 pharetra magna ac placerat vestibulum lectus. Convallis 
                 a cras semper auctor neque vitae. Ut diam quam nulla porttitor 
                 massa id neque aliquam. Viverra maecenas accumsan lacus vel. 
-                Eu ultrices vitae auctor eu augue ut lectus arcu. </p>
+                Eu ultrices vitae auctor eu augue ut lectus arcu. </p></div>
+              <div class="cell small-6 headshot"><img src="images/headshot-placeholder.jpg"></div>
             </div>
           </div>
-      </div>
 
-      
-        
+          <!-- SMALL Vertical Grid for a bit about me and Headshot photo of myself for small -->
+          <div class="grid-container show-for-small-only" id="mobile-bio-headshot-container">
+            <div class="grid-y" style="height: 20rem;">
+              <div class="cell small-2 bio-header-container">
+                <h2 id="bio-header-mobile">Hi, I'm Ben. Nice to meet you.</h2>
+              </div>
+              <div class="cell small-6" id="headshot-mobile-cell">
+                <img id="headshot-mobile-img" src="images/headshot-mobile.png">
+              </div>
+              <div class="cell small-9" >
+                <p id="bio-mobile">I am a computer science major at the University of St. Thomas. I have interests in full stack web development and project management.</p>
+              </div>
+            </div>
+        </div>
+
+
+        <!-- Footer with img -->
+        <div class="footer-img-container">
+          <img class="footer-img" src="images/illustration-computer-footer-img.svg">
+        </div>
+        <div class="footer">
+          <p>footer</p>
+        </div>  
+
+
 
 
 
@@ -98,7 +116,7 @@
         
 
           
-        </div>
+      </div>
 
 
         
