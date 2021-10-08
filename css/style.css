@@ -116,10 +116,10 @@ a:hover {
 
 #mobile-bio-headshot-container {
     margin-top: 4em;
-    margin-bottom: 9em;
+    margin-bottom: 4em;
     padding-top: 1em;
-    background: linear-gradient(to bottom, white 20%, #91befd 20%, #91befd 80%, white 80%);
-    background: linear-gradient(to bottom, #91befd 50%, white 0%);
+    
+    background: linear-gradient(to bottom, #91befd 30%, white 0%);
 }
 
 #mobile-navbar {
@@ -289,6 +289,8 @@ a:hover {
     background:#91befd;
     margin-top: 2rem;
 }
+
+
 
 /* Resume Desktop */ 
 #resume-header-container {
