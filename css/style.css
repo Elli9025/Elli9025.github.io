@@ -56,9 +56,6 @@ a:hover {
     word-break: break-word;
 }
 
-.headshot-container {
-    
-}
 
 #headshot-img {
     padding-left: 5.7815rem;
@@ -153,7 +150,7 @@ a:hover {
 }
 
 #rectangle{
-    width:100%px;
+    width:100%;
     height:2rem;
     background:#91befd;
 }
@@ -240,7 +237,7 @@ a:hover {
     }
 
     #rectangle-nonhomepage{
-        width:100%px;
+        width:100%;
         height:2rem;
         background:#91befd;
         margin-top: 8rem;
@@ -284,7 +281,7 @@ a:hover {
 
 
 #mobile-rectangle-nonhomepage{
-    width:100%px;
+    width:100%;
     height:2rem;
     background:#91befd;
     margin-top: 2rem;
