@@ -336,8 +336,32 @@ font-style: bold;
 }
 
 .resume-description-smaller {
-    
+
         font-family: 'Asap', sans-serif;
         font-size: 1rem;
   
+}
+
+.fun-header {
+    padding-top: 3rem;
+font-family: 'Mukta', sans-serif;
+font-size: 1.75rem;
+text-align: center;
+
+}
+
+.fun-description-smaller {
+    font-family: 'Asap', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+
+}
+
+.fun-image {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  border: .4rem solid #91befd;
+        border-radius: 1.563rem;
 }
